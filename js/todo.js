@@ -2,7 +2,13 @@ const toDoForm = document.querySelector("#todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector("#todo-list");
 
+const TODOS_KEY = "todos";
+
 const toDos = [];
+
+function saveToDos() {
+  localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
+}
 
 function deleteToDo(event) {
   const li = event.target.parentElement;
@@ -27,6 +33,18 @@ function handleToDoSubmit(event) {
   toDoInput.value = ""; // toDoInput.value 값에 빈값 저장 > 이때 변수에는 값이 저장되어 있음!
   toDos.push(newToDo);
   paintToDo(newToDo);
+  saveToDos();
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
+
+function sayHello(item) {
+  console.log("this is the turn of", item);
+}
+
+const savedToDos = localStorage.getItem(TODOS_KEY);
+
+if (savedToDos !== null) {
+  const parsedToDos = JSON.parse(savedToDos);
+  parsedToDos.forEach(sayHello);
+}
