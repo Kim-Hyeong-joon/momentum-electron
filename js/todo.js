@@ -12,13 +12,15 @@ function saveToDos() {
 
 function deleteToDo(event) {
   const li = event.target.parentElement;
+  console.log(li.id);
   li.remove();
 }
 
 function paintToDo(newTodo) {
   const li = document.createElement("li");
+  li.id = newTodo.id;
   const span = document.createElement("span");
-  span.innerText = newTodo;
+  span.innerText = newTodo.text;
   const button = document.createElement("button");
   button.innerText = "❌";
   button.addEventListener("click", deleteToDo);
@@ -29,10 +31,14 @@ function paintToDo(newTodo) {
 
 function handleToDoSubmit(event) {
   event.preventDefault();
-  const newToDo = toDoInput.value; // toDoInput.value 값을 변수에 저장
+  const newTodo = toDoInput.value; // toDoInput.value 값을 변수에 저장
   toDoInput.value = ""; // toDoInput.value 값에 빈값 저장 > 이때 변수에는 값이 저장되어 있음!
-  toDos.push(newToDo);
-  paintToDo(newToDo);
+  const newTodoObj = {
+    text: newTodo,
+    id: Date.now(),
+  };
+  toDos.push(newTodoObj);
+  paintToDo(newTodoObj);
   saveToDos();
 }
 
