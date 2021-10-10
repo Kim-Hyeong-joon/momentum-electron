@@ -12,12 +12,13 @@ function saveToDos() {
 
 function deleteToDo(event) {
   const li = event.target.parentElement;
-  console.log(li.id);
   li.remove();
+  toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+  saveToDos();
 }
 
 function paintToDo(newTodo) {
-  const li = document.createElement("li");
+  const li = document.createElement("li"); // li element를 하나 생성 후 li 변수에 할당
   li.id = newTodo.id;
   const span = document.createElement("span");
   span.innerText = newTodo.text;
