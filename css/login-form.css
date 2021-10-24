@@ -1,0 +1,31 @@
+.login-form-box {
+  display: flex;
+  justify-content: center;
+}
+
+#login-form input:first-child {
+  background-color: inherit;
+  border: inherit;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  text-align: center;
+  width: 500px;
+  height: 50px;
+  font-size: 50px;
+}
+
+#login-form input:first-child::placeholder {
+  color: black;
+  text-align: center;
+  font-size: 50px;
+}
+
+#login-form input:last-child {
+  border: inherit;
+  border-radius: 20px;
+  position: relative;
+  left: 20px;
+  bottom: 5px;
+  height: 40px;
+  width: 80px;
+  font-size: 20px;
+}

@@ -1,0 +1,10 @@
+.clock-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 230px;
+  margin-bottom: 20px;
+}
+
+#clock {
+  font-size: 120px;
+}

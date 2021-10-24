@@ -1,0 +1,9 @@
+.greeting-box {
+  display: flex;
+  justify-content: center;
+}
+
+#greeting {
+  font-size: 40px;
+  font-weight: 500;
+}

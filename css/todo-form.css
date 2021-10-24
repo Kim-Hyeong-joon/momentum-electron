@@ -1,0 +1,24 @@
+.todo-form-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.todo-form-input {
+  background-color: inherit;
+  border: inherit;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  width: 450px;
+  height: 35px;
+  font-size: 25px;
+  font-weight: 550;
+  text-align: center;
+}
+
+.todo-form-input::placeholder {
+  color: #414346;
+  font-weight: 520;
+  text-align: center;
+  font-size: 30px;
+}

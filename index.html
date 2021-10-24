@@ -4,30 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css\styles.css" />
     <title>Momentum App</title>
   </head>
   <body>
-    <h2 id="clock">00:00:00</h2>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote" class="column">
-      <span></span>
-      <span></span>
+    <div class="weather-box">
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    <div id="weather">
+    <div class="clock-box">
+      <h2 id="clock">00:00</h2>
+    </div>
+    <div class="login-form-box">
+      <form id="login-form" class="hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <input type="submit" value="Log In" />
+      </form>
+    </div>
+    <div class="greeting-box">
+      <h1 id="greeting" class="hidden"></h1>
+    </div>
+    <div class="todo-form-box">
+      <form id="todo-form">
+        <input
+          class="todo-form-input"
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+    </div>
+    <div class="todo-list-box">
+      <ul id="todo-list"></ul>
+    </div>
+    <div id="quote" class="column">
       <span></span>
       <span></span>
     </div>

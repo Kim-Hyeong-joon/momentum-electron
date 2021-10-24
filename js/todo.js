@@ -21,7 +21,7 @@ function paintToDo(newTodo) {
   const li = document.createElement("li"); // li element를 하나 생성 후 li 변수에 할당
   li.id = newTodo.id;
   const span = document.createElement("span");
-  span.innerText = newTodo.text;
+  span.innerText = `⨀ ${newTodo.text} `;
   const button = document.createElement("button");
   button.innerText = "❌";
   button.addEventListener("click", deleteToDo);
