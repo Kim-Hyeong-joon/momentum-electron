@@ -1,5 +1,18 @@
 .todo-list-box {
   display: flex;
   justify-content: center;
+
+  margin-top: 30px;
   margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.todo-list-box ul li {
+  display: flex;
+  align-items: center;
+}
+
+.todo-list-box ul li button {
+  position: relative;
+  left: 10px;
 }

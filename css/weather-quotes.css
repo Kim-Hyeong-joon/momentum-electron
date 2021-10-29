@@ -17,3 +17,8 @@
   flex-direction: column;
   align-items: center;
 }
+
+.quotes-column span:last-child {
+  position: relative;
+  top: 5px;
+}
