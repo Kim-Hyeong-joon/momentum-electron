@@ -1,0 +1,18 @@
+.background-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.background-img {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  opacity: 85%;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}

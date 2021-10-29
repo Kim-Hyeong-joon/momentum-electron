@@ -1,0 +1,22 @@
+.weather-quotes-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 100px;
+}
+
+.weather-column {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.quotes-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quotes-column span {
+  font-weight: 100px;
+}
