@@ -1,11 +1,11 @@
 @import "reset.css";
 @import "background.css";
-@import "weather-quotes.css";
 @import "clock.css";
 @import "login-form.css";
 @import "greetings.css";
 @import "todo-form.css";
 @import "todo-list.css";
+@import "weather-quotes.css";
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
