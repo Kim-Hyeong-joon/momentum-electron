@@ -1,8 +1,4 @@
 .weather-quotes-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: 100px;
   font-size: 19px;
 }
 
@@ -21,4 +17,13 @@
 .quotes-column span:last-child {
   position: relative;
   top: 5px;
+}
+
+.weather-quotes-fixed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 20px;
 }

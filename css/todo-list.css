@@ -10,6 +10,7 @@
 .todo-list-box ul li {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .todo-list-box ul li button {
